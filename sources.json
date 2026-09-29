@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ai-rmf",
+    "title": "AI Risk Management Framework (AI RMF 1.0)",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "filename": "NIST.AI.100-1.pdf"
+  },
+  {
+    "id": "genai-profile",
+    "title": "AI RMF: Generative AI Profile",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "filename": "NIST.AI.600-1.pdf"
+  }
+]

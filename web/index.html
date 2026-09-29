@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Evidence Desk: an experiment in page-cited retrieval over public AI engineering documents.">
+  <title>Evidence Desk · Om Vaghasiya</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topline"><div class="mark">OV <span>/ LAB 02</span></div><a href="https://om7203.github.io/om-vaghasiya-portfolio/">Portfolio ↗</a></header>
+    <div class="hero"><p class="eyebrow">AI ENGINEERING / DOCUMENT INTELLIGENCE</p><h1>Follow the<br><em>evidence.</em></h1><p class="intro">Ask a question about AI risk management. This local experiment searches two public NIST PDFs and shows the passages and PDF pages behind its result.</p></div>
+    <section class="workspace" aria-labelledby="workspace-title"><div class="workhead"><span>01 / QUERY</span><span>EXTRACTIVE RETRIEVAL V1</span></div><h2 id="workspace-title">What do you want to know?</h2>
+      <form id="ask-form"><label class="sr" for="question">Question</label><textarea id="question" name="question" maxlength="500" rows="3" placeholder="e.g. What are the four functions of the AI RMF core?" required></textarea><div class="controls"><div class="samples"><button type="button" data-question="What are the four functions of the AI RMF core?">RMF functions</button><button type="button" data-question="What is prompt injection?">Prompt injection</button><button type="button" data-question="What does the GenAI profile say about confabulation?">Confabulation</button></div><button class="submit" type="submit">Find evidence <span>↗</span></button></div></form>
+    </section>
+    <section id="result" class="result" aria-live="polite" hidden></section>
+    <footer><p><b>What this version does:</b> ranks passages using word and character TF-IDF. It does not call a language model or invent a summary. A relevance score is not proof that a passage answers the question; verify the linked page.</p><p>Sources: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf" target="_blank" rel="noopener">NIST AI RMF 1.0</a> · <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener">NIST GenAI Profile</a></p></footer>
+  </main>
+</body>
+</html>

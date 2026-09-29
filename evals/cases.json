@@ -1,0 +1,13 @@
+[
+  {"question":"What are the four functions of the AI RMF core?","source_id":"ai-rmf","pages":[25]},
+  {"question":"What characteristics make AI trustworthy?","source_id":"ai-rmf","pages":[17]},
+  {"question":"What does the Map function do?","source_id":"ai-rmf","pages":[30]},
+  {"question":"What does the Measure function do?","source_id":"ai-rmf","pages":[33,34]},
+  {"question":"What does the Govern function do?","source_id":"ai-rmf","pages":[27,28]},
+  {"question":"What is prompt injection?","source_id":"genai-profile","pages":[15]},
+  {"question":"What is confabulation?","source_id":"genai-profile","pages":[10]},
+  {"question":"What are risks of synthetic content?","source_id":"genai-profile","pages":[5,13,55]},
+  {"question":"How does the GenAI Profile address data privacy?","source_id":"genai-profile","pages":[30]},
+  {"question":"What is the weather in Berlin today?","source_id":null,"pages":[]},
+  {"question":"Who won the 2026 World Cup?","source_id":null,"pages":[]}
+]
