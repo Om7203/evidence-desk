@@ -1,0 +1,86 @@
+{
+  "method": "browser-bm25-v1",
+  "note": "Same source passages and small, non-blinded question set as the local API; this browser algorithm is different from the Python TF-IDF baseline.",
+  "page_top1": "7/9",
+  "page_top3": "9/9",
+  "out_of_scope_abstain": "2/2",
+  "cases": [
+    {
+      "question": "What are the four functions of the AI RMF core?",
+      "expected": "ai-rmf: PDF pages 25",
+      "actual": "ai-rmf: PDF page 25",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What characteristics make AI trustworthy?",
+      "expected": "ai-rmf: PDF pages 17",
+      "actual": "ai-rmf: PDF page 17",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What does the Map function do?",
+      "expected": "ai-rmf: PDF pages 30",
+      "actual": "ai-rmf: PDF page 35",
+      "top1_hit": false,
+      "top3_hit": true
+    },
+    {
+      "question": "What does the Measure function do?",
+      "expected": "ai-rmf: PDF pages 33, 34",
+      "actual": "ai-rmf: PDF page 35",
+      "top1_hit": false,
+      "top3_hit": true
+    },
+    {
+      "question": "What does the Govern function do?",
+      "expected": "ai-rmf: PDF pages 27, 28",
+      "actual": "ai-rmf: PDF page 27",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What is prompt injection?",
+      "expected": "genai-profile: PDF pages 15",
+      "actual": "genai-profile: PDF page 15",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What is confabulation?",
+      "expected": "genai-profile: PDF pages 10",
+      "actual": "genai-profile: PDF page 10",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What are risks of synthetic content?",
+      "expected": "genai-profile: PDF pages 5, 13, 55",
+      "actual": "genai-profile: PDF page 55",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "How does the GenAI Profile address data privacy?",
+      "expected": "genai-profile: PDF pages 30",
+      "actual": "genai-profile: PDF page 30",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "What is the weather in Berlin today?",
+      "expected": "abstain",
+      "actual": "abstain",
+      "top1_hit": true,
+      "top3_hit": true
+    },
+    {
+      "question": "Who won the 2026 World Cup?",
+      "expected": "abstain",
+      "actual": "abstain",
+      "top1_hit": true,
+      "top3_hit": true
+    }
+  ]
+}

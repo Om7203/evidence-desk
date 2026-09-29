@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Try page-cited search over two public NIST AI documents, directly in your browser.">
+  <title>Evidence Desk · Public demo</title>
+  <link rel="stylesheet" href="./styles.css?v=1">
+  <script type="module" src="./app.js?v=1"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topline"><div class="mark">OV <span>/ EVIDENCE DESK</span></div><a href="https://om7203.github.io/om-vaghasiya-portfolio/projects/evidence-desk.html">Case study ↗</a></header>
+    <div class="hero"><p class="eyebrow">PUBLIC DEMO / DOCUMENT INTELLIGENCE</p><h1>Follow the<br><em>evidence.</em></h1><p class="intro">Ask about AI risk management. This demo searches extracted passages from two public NIST PDFs and opens the exact source page. It runs entirely in your browser.</p></div>
+    <section class="workspace" aria-labelledby="workspace-title"><div class="workhead"><span>01 / QUERY</span><span>BROWSER BM25 V1</span></div><h2 id="workspace-title">What do you want to know?</h2>
+      <form id="ask-form"><label class="sr" for="question">Question</label><textarea id="question" name="question" maxlength="500" rows="3" placeholder="e.g. What are the four functions of the AI RMF core?" required></textarea><div class="controls"><div class="samples"><button type="button" data-question="What are the four functions of the AI RMF core?">RMF functions</button><button type="button" data-question="What is prompt injection?">Prompt injection</button><button type="button" data-question="What is confabulation?">Confabulation</button></div><button class="submit" type="submit" disabled>Loading passages…</button></div></form>
+    </section>
+    <section id="result" class="result" aria-live="polite" hidden></section>
+    <footer><p><b>Read this first:</b> This is lexical search, not a language-model answer. A matching passage may still be irrelevant. Check the PDF page before relying on it. Questions stay in this browser tab; the demo has no application backend or account.</p><p>Sources: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf" target="_blank" rel="noopener">NIST AI RMF 1.0</a> · <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener">NIST GenAI Profile</a><br><a href="https://github.com/Om7203/evidence-desk/blob/main/browser/evaluation.json" target="_blank" rel="noopener">Evaluation and known misses ↗</a></p></footer>
+  </main>
+</body>
+</html>
