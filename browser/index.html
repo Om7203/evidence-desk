@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Search two public NIST AI documents and request a generated answer with verifiable PDF-page citations.">
   <title>Evidence Desk · Public demo</title>
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=3">
   <script src="./config.js"></script>
   <script type="module" src="./app.js?v=2"></script>
 </head>
 <body>
   <main class="shell">
-    <header class="topline"><div class="mark">OV <span>/ EVIDENCE DESK</span></div><a href="https://om7203.github.io/om-vaghasiya-portfolio/projects/evidence-desk.html">Case study ↗</a></header>
+    <header class="topline"><a class="mark" href="https://om7203.github.io/om-vaghasiya-portfolio/" aria-label="Om Vaghasiya home">OV <span>/ EVIDENCE DESK</span></a><a href="https://om7203.github.io/om-vaghasiya-portfolio/projects/evidence-desk.html">Case study ↗</a></header>
     <div class="hero"><p class="eyebrow">PUBLIC DEMO / DOCUMENT INTELLIGENCE</p><h1>Follow the<br><em>evidence.</em></h1><p class="intro">Search two public NIST AI documents, then ask for a short answer with links to the PDF pages behind it.</p></div>
     <section class="workspace" aria-labelledby="workspace-title"><div class="workhead"><span>01 / QUERY</span><span>BM25 SEARCH + CITED ANSWER</span></div><h2 id="workspace-title">What do you want to know?</h2>
       <form id="ask-form"><label class="sr" for="question">Question</label><textarea id="question" name="question" maxlength="500" rows="3" placeholder="e.g. What are the four functions of the AI RMF core?" required></textarea><div class="controls"><div class="samples"><button type="button" data-question="What are the four functions of the AI RMF core?">RMF functions</button><button type="button" data-question="What is prompt injection?">Prompt injection</button><button type="button" data-question="What is confabulation?">Confabulation</button></div><button class="submit" type="submit" disabled>Loading passages…</button></div></form>
