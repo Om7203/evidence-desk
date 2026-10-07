@@ -4,6 +4,8 @@ I built this as a document-search experiment over two public NIST publications: 
 
 [Try the public browser demo](https://om7203.github.io/om-vaghasiya-portfolio/evidence/) · [Read the portfolio case study](https://om7203.github.io/om-vaghasiya-portfolio/projects/evidence-desk.html)
 
+Browser searches are linkable: after a search, the current question is saved in the page URL so an example can be shared or revisited without retyping it.
+
 The local API uses word and character TF-IDF; the public browser demo uses BM25. The browser demo now offers an **optional cited answer**: a separate Vercel function searches its own fixed NIST corpus and asks Gemini to answer using those passages. The model can cite only retrieved passage IDs. A valid citation does not guarantee that every sentence is correct, so the PDF-page links remain central. The answer service lives in the [portfolio repository](https://github.com/Om7203/om-vaghasiya-portfolio/tree/main/chat-api); browser search still works when it is unavailable.
 
 ![The public browser demo showing a cited passage from PDF page 25](docs/browser-demo.png)

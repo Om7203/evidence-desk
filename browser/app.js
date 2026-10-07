@@ -7,6 +7,18 @@ const submit = form.querySelector('.submit');
 let retriever;
 let currentQuestion = '';
 
+function restoreSharedQuestion() {
+  const question = new URLSearchParams(window.location.search).get('q')?.trim();
+  if (!question) return;
+  input.value = question.slice(0, input.maxLength);
+}
+
+function rememberQuestion(question) {
+  const url = new URL(window.location.href);
+  url.searchParams.set('q', question);
+  window.history.replaceState({}, '', url);
+}
+
 function node(tag, className, text) {
   const element = document.createElement(tag);
   if (className) element.className = className;
@@ -22,6 +34,7 @@ async function load() {
     retriever = new BrowserRetriever(corpus.passages);
     submit.textContent = 'Find evidence ↗';
     submit.disabled = false;
+    restoreSharedQuestion();
   } catch (error) {
     submit.textContent = 'Could not load passages';
     result.hidden = false;
@@ -38,6 +51,7 @@ form.addEventListener('submit', event => {
   if (!retriever) return;
   try {
     currentQuestion = input.value.trim();
+    rememberQuestion(currentQuestion);
     const hits = retriever.search(currentQuestion);
     result.hidden = false;
     const head = node('div', 'result-head');
